@@ -228,4 +228,8 @@ class Logger extends AbstractLogger
     {
         return $indent.str_replace("\n", "\n".$indent, $string);
     }
+
+    public function getLogFilePath() {
+        return $this->logFilePath;
+    }
 }
